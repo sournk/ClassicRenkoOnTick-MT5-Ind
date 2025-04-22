@@ -3,7 +3,7 @@
 This MT5 indicator provides real-time updates of classic Renko charts. Renko charts focus on price movement, filtering out noise and highlighting trends.
 
 * Coding by Denis Kislitsyn | denis@kislitsyn.me | [kislitsyn.me](https://kislitsyn.me/personal/algo)
-* Published: [MQL5 Market](https://www.mql5.com/ru/market/product/)
+* Published: [MQL5 Market](https://www.mql5.com/ru/market/product/137132)
 * Version: 1.00
 
 
