@@ -4,7 +4,7 @@ This MT5 indicator provides real-time updates of classic Renko charts. Renko cha
 
 * Coding by Denis Kislitsyn | denis@kislitsyn.me | [kislitsyn.me](https://kislitsyn.me/personal/algo)
 * Published: [MQL5 Market](https://www.mql5.com/ru/market/product/137132)
-* Version: 1.01
+* Version: 1.02
 
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
