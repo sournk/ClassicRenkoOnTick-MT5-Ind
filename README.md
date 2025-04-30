@@ -4,7 +4,7 @@ This MT5 indicator provides real-time updates of classic Renko charts. Renko cha
 
 * Coding by Denis Kislitsyn | denis@kislitsyn.me | [kislitsyn.me](https://kislitsyn.me/personal/algo)
 * Published: [MQL5 Market](https://www.mql5.com/ru/market/product/137132)
-* Version: 1.02
+* Version: 1.06
 
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
@@ -26,8 +26,6 @@ This MT5 indicator provides real-time updates of classic Renko charts. Renko cha
 <!-- /code_chunk_output -->
 
 
-
-
 ## What are Renko candles?
 
 Renko charts display price movement using "bricks" of equal size, ignoring time. A new brick is drawn only when the price moves by a specified amount. They help visualize trends by removing time-based noise.
@@ -35,9 +33,13 @@ Renko charts display price movement using "bricks" of equal size, ignoring time.
 
 ## Parameters
 
-- **BrickSizePoints** (20): Renko brick size in points
-- **HistoryDepthSec** (3600): Historical data to initialize the chart (in seconds)
+- **Brick Size, pnt** (20): Renko brick size in points
 - **PriceSource** (Bid): Price source Ask(0) or Bid(1)
+- **Renko Type** (Classic): Build Classic(0) or Offset(1) Renko bricks
+- **HistoryDepthSec** (3600): Historical data to initialize the chart (in seconds)
+- **Bar Limit Count for performance (0-off)** (100): Max bricks count to draw
+- **Show Warning** (true): Show warning text on indicator subwindow
+
 
 ## Real-time Calculation
 
@@ -54,8 +56,11 @@ The Renko chart's X-axis doesn't match the main chart's time scale. Renko charts
    3. **Low**: Renko brick low price
    4. **Close**: Renko brick close price
    5. **Color**: Renko brick color (0 for up, 1 for down)
-   6. **Time**: Renko brick start time
-   7. **TimeDuration**: Renko brick duration (milliseconds)
+   6. **Start TimeStamp**: Renko brick start timestamp
+   7. **Duration, ms**: Renko brick duration (milliseconds)
+   8. **Start Human Date**: Renko brick start date in human format YYYYMMDD
+   9. **Start Human Time**  Renko brick start time in human format hMMSS
+   10. **Start Human MS**  Renko brick start ms time in human format MS
 
 ## Trading ideas
 
